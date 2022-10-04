@@ -1,0 +1,31 @@
+.manage-tenants-wrapper {
+}
+
+.update-tenant {
+  // switch color for update screen
+  .ant-switch-checked {
+    background-color: #40af3c !important;
+  }
+}
+
+.manage-tenants-view {
+  .primary-tabs {
+    .ant-tabs-nav-wrap {
+      margin-left: 0 !important;
+    }
+    .ant-tabs-nav-wrap {
+      margin-bottom: 22px !important;
+    }
+  }
+
+  .breadcrumb {
+    margin-bottom: 30px !important;
+    span {
+      margin-top: 0 !important;
+    }
+  }
+}
+.unpaid-payment-section {
+  padding-top: 15px;
+  border-top: 1px solid #e5e5e5;
+}

@@ -1,0 +1,252 @@
+.business-info-wrapper {
+  .business-profile {
+    display: flex;
+    justify-content: center;
+    height: 150px !important;
+  }
+
+  .profile {
+    width: 128px;
+    height: 128px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    @include BGImageDefault();
+
+    img {
+      margin-top: 40px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      color: #186bb1 !important;
+    }
+  }
+
+  .primary-input {
+    width: 220px !important;
+  }
+
+  .general-details {
+    min-height: 261px;
+
+    h1 {
+      margin-bottom: 24px !important;
+    }
+  }
+
+  // .general-details::-webkit-scrollbar {
+  //   // display: none;
+  // }
+
+  // /* Hide scrollbar for IE, Edge add Firefox */
+  // .general-details {
+  //   -ms-overflow-style: none;
+  //   scrollbar-width: none; /* Firefox */
+  // }
+}
+.general-setting-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  .card-gs {
+    min-width: 278px;
+    height: 149px;
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 14px 20px;
+    margin-right: 33px;
+    h1 {
+      padding-bottom: 7px;
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 17px;
+    }
+    p {
+      margin-bottom: 10px !important;
+    }
+    .primary-input-number {
+      width: 64px !important;
+      .ant-input-number-input {
+        width: 50px !important;
+        font-size: 16px !important;
+      }
+    }
+    u {
+      margin-left: 32px;
+      cursor: pointer;
+    }
+  }
+}
+
+.all-plan-wrapper {
+  p {
+    margin-bottom: 24px;
+  }
+  .primary-button {
+    width: 109px !important;
+    span {
+      font-weight: 500 !important;
+    }
+  }
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .plan-card {
+    width: 289px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    &__header {
+      height: 50px;
+      background: #f3f3f3 0% 0% no-repeat padding-box;
+      border-radius: 8px 8px 0px 0px;
+      padding: 9px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__content {
+      padding: 20px 14px;
+      border-left: 1px solid #dedede;
+      border-right: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+      min-height: max-content;
+
+      .feature-wrapper:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .plan-card:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.create-plan-wrapper {
+  padding: 18px !important;
+
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .create-plan-content {
+    width: 100%;
+    min-height: 453px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 22px;
+    display: flex;
+    justify-content: space-evenly;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .plan-details {
+    width: 400px !important;
+    .plan-detail-input-number {
+      .primary-input {
+        width: 141px !important;
+      }
+    }
+  }
+  .plan-name-input {
+    width: 335px !important;
+  }
+}
+
+.all-features {
+  .feature-box {
+    width: 193px;
+    min-height: 47px;
+    background: #ecf6ff 0% 0% no-repeat padding-box;
+    border: 1px solid #b8dfff;
+    border-radius: 4px;
+    padding: 13px 6px;
+    position: relative;
+    img {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      cursor: pointer;
+    }
+  }
+  .feature-modal {
+    width: 222px;
+    height: 136px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5656562e;
+    border: 1px solid #cecece;
+    position: absolute;
+    left: 90px;
+    top: 31px;
+    z-index: 2;
+    padding: 12px;
+
+    .primary-input {
+      width: 198px !important;
+      height: 32px !important;
+    }
+    .ant-btn {
+      padding: 4px 0 !important;
+    }
+  }
+
+  .default-button,
+  .primary-button {
+    width: 65px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+    span {
+      font-weight: 500 !important;
+    }
+
+    img {
+      margin-bottom: 2px;
+      margin-right: 4px;
+    }
+  }
+}
+
+// rounded triangle
+.triangle {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  text-align: left;
+  top: -118px;
+  left: 24px;
+  border: 1px solid #cecece;
+}
+.triangle:before,
+.triangle:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 13px;
+  height: 13px;
+  border-top-right-radius: 70%;
+}
+
+.triangle {
+  transform: rotate(-60deg) skewX(-35deg) scale(1, 0.866);
+}
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+    translate(0, -50%);
+}
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}

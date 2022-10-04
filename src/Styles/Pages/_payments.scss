@@ -1,0 +1,56 @@
+.view-payment-wrapper {
+  .btn-d-invoice {
+    width: 140px !important;
+    padding: 8px 10px !important;
+  }
+  .btn-v-invoice {
+    padding: 8px 10px !important;
+    width: 118px !important;
+  }
+  .list-inline-item:not(:last-child) {
+    margin-right: 60px !important;
+  }
+  ul,
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  .business-details {
+    margin-bottom: 44px !important;
+  }
+
+  .payment-details-wrapper {
+    .payment-details-card {
+      float: right;
+      width: 399px;
+      min-height: 281px;
+      background: #f9f9f9 0% 0% no-repeat padding-box;
+      border: 1px solid #f2f2f2;
+      border-radius: 8px;
+      padding: 0 5px;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 16px;
+      }
+      &__content {
+        background: #f1f1f1;
+        padding: 16px 24px;
+        margin: 16px;
+        border-radius: 8px;
+      }
+
+      .ant-image {
+        .anticon {
+          vertical-align: 0rem !important;
+        }
+      }
+    }
+    .card-type-cheque {
+      font-size: 14px !important;
+      font-weight: 500 !important;
+    }
+  }
+}
