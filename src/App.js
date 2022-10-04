@@ -7,8 +7,14 @@ import Home from "Pages/Home/Home";
 import Product from "Pages/Home/Product";
 import Category from "Pages/Home/Category";
 import Brand from "Pages/Home/Brand";
+import { useUserContext } from "./Context/UserContext";
 
+import Api from "Api";
 function App() {
+  const { login: signin, getUser,token } = useUserContext();
+  const user = getUser();
+  let tokenn = token();
+  Api.defaults.headers.common['Authorization'] = `Bearer ${tokenn}`;
   return (
     <Router>
       <div>
